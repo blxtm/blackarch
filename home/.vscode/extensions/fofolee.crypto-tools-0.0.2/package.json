@@ -1,0 +1,150 @@
+{
+	"name": "crypto-tools",
+	"displayName": "Crypto Tools",
+	"description": "Contains lots of encoding/decoding and encryption/decryption tools like base64、hash、urlencode、AES、RSA、Vigenere、Caesar、etc.,and additional provides some text manipulation functions",
+	"version": "0.0.2",
+	"publisher": "fofolee",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"crypto",
+		"encode",
+		"decoden",
+		"encrypt",
+		"decrypt",
+		"text manipulation",
+		"output color"
+	],
+	"bugs": {
+		"url": "https://github.com/fofolee/vscode-crypto-tools/issues",
+		"email": "fofolee@live.cn"
+	},
+	"homepage": "https://github.com/fofolee/vscode-crypto-tools/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fofolee/vscode-crypto-tools.git"
+	},
+	"icon": "icon.png",
+	"activationEvents": [
+		"onCommand:crypto.EncodeDecode",
+		"onCommand:crypto.EncryptDecrypt",
+		"onCommand:crypto.textManipulation",
+		"onCommand:crypto.hexadecimalCalculator",
+		"onCommand:crypto.outputColorPatch"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "crypto.EncodeDecode",
+				"title": "Encoding and Decoding",
+				"category": "🔐Crypto"
+			},
+			{
+				"command": "crypto.EncryptDecrypt",
+				"title": "Encryption and Decryption",
+				"category": "🔐Crypto"
+			},
+			{
+				"command": "crypto.textManipulation",
+				"title": "Text manipulation",
+				"category": "🔐Crypto"
+			},
+			{
+				"command": "crypto.hexadecimalCalculator",
+				"title": "Hexadecimal calculator",
+				"category": "🔐Crypto"
+			},
+			{
+				"command": "crypto.outputColorPatch",
+				"title": "Fix output channel color conflicts",
+				"category": "🔐Crypto"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "crypto.EncodeDecode",
+					"group": "7_modification"
+				},
+				{
+					"when": "editorHasSelection",
+					"command": "crypto.EncryptDecrypt",
+					"group": "7_modification"
+				},
+				{
+					"when": "editorHasSelection",
+					"command": "crypto.textManipulation",
+					"group": "7_modification"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"command": "crypto.EncodeDecode",
+				"key": "ctrl+alt+d",
+				"when": "editorHasSelection"
+			},
+			{
+				"command": "crypto.EncryptDecrypt",
+				"key": "ctrl+alt+a",
+				"when": "editorHasSelection"
+			},
+			{
+				"command": "crypto.textManipulation",
+				"key": "ctrl+alt+t",
+				"when": "editorHasSelection"
+			},
+			{
+				"command": "crypto.hexadecimalCalculator",
+				"key": "ctrl+alt+c"
+			}
+		],
+		"languages": [
+			{
+				"id": "crypto-output",
+				"mimetypes": [
+					"text/x-code-output"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "crypto-output",
+				"scopeName": "crypto.output",
+				"path": "./syntaxes/crypto-tools-output.tmLanguage"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.1.4",
+		"vscode": "^1.1.25",
+		"eslint": "^4.11.0",
+		"@types/node": "^8.10.25",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"bubble_babble": "^0.2.0",
+		"htmlencode": "0.0.4",
+		"iconv-lite": "^0.4.24",
+		"quoted-printable": "^1.0.1",
+		"safer-buffer": "^2.1.2",
+		"urlencode": "^1.1.0",
+		"utf8": "^3.0.0",
+		"xmorse": "0.0.4"
+	},
+	"__metadata": {
+		"id": "cdb09a63-808d-4e1f-8cd5-b64631836980",
+		"publisherId": "efec9ef6-be92-4afe-9ad8-0695230f3e4c",
+		"publisherDisplayName": "fofolee"
+	}
+}

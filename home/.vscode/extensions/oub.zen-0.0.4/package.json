@@ -1,0 +1,62 @@
+{
+	"name": "zen",
+	"displayName": "Zen Themes",
+	"description": "Themes with lots of zen",
+	"version": "0.0.4",
+	"publisher": "oub",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"zen",
+		"black",
+		"white",
+		"dark",
+		"light",
+		"flat"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"id": "zen-theme",
+				"label": "Zen",
+				"uiTheme": "vs-dark",
+				"path": "./themes/zen-dark.json"
+			},
+			{
+				"id": "zen-light-theme",
+				"label": "Zen Light",
+				"uiTheme": "vs",
+				"path": "./themes/zen-light.json"
+			},
+			{
+				"id": "zen-white-theme",
+				"label": "Zen White",
+				"uiTheme": "vs",
+				"path": "./themes/zen-white.json"
+			}
+		]
+	},
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#000",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"homepage": "https://github.com/oub/vscode-zen",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oub/vscode-zen.git"
+	},
+	"bugs": {
+		"url": "https://github.com/oub/vscode-zen/issues"
+	},
+	"__metadata": {
+		"id": "70dd5573-8e97-459b-b317-5286d6a0c44e",
+		"publisherId": "9ae07d6d-8ea3-401a-bfcd-ce45fd375686",
+		"publisherDisplayName": "Olivier Cuenot"
+	}
+}

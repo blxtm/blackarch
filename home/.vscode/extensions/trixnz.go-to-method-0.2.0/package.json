@@ -1,0 +1,56 @@
+{
+	"name": "go-to-method",
+	"displayName": "Go To Method",
+	"description": "Adds the ability to go to only method symbols declared in the active document",
+	"version": "0.2.0",
+	"publisher": "trixnz",
+	"homepage": "https://github.com/trixnz/vscode-go-to-method#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/trixnz/vscode-go-to-method"
+	},
+	"bugs": {
+		"url": "https://github.com/trixnz/vscode-go-to-method/issues"
+	},
+	"license": "MIT",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#2d2d2d",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:workbench.action.gotoMethod"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "workbench.action.gotoMethod",
+				"title": "Go to Method in File..."
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/node": "^13.7.1",
+		"tslint": "^6.0.0",
+		"typescript": "^3.7.5",
+		"vscode": "^1.1.36"
+	},
+	"__metadata": {
+		"id": "13fbce29-2b71-4689-8d18-df247ae6c5f8",
+		"publisherId": "f911da7e-035a-42b2-ad30-3953e7ed2ad4",
+		"publisherDisplayName": "trixnz"
+	}
+}

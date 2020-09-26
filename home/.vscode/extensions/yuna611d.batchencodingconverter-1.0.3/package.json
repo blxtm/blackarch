@@ -1,0 +1,56 @@
+{
+	"name": "batchencodingconverter",
+	"displayName": "BatchEncodingConverter",
+	"description": "convert encoding of files in current workspace.",
+	"version": "1.0.3",
+	"publisher": "yuna611d",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.convertSjisToUTF8",
+		"onCommand:extension.convertUTF8ToSjis"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.convertSjisToUTF8",
+				"title": "BatchEncodingConvert: SJIS to UTF8"
+			},
+			{
+				"command": "extension.convertUTF8ToSjis",
+				"title": "BatchEncodingConvert: UTF8 to SJIS"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^11.13.6",
+		"tslint": "^5.8.0",
+		"typescript": "^3.0.1",
+		"vscode": "^1.1.6"
+	},
+	"dependencies": {
+		"iconv-lite": "^0.4.24"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yuna611d/BatchEncodingConverter.git"
+	},
+	"__metadata": {
+		"id": "6c2c6aa4-2240-4acd-8c4c-47b10318cf72",
+		"publisherId": "40f701a2-60c5-43b6-a785-4e11a737992a",
+		"publisherDisplayName": "yuna611d"
+	}
+}

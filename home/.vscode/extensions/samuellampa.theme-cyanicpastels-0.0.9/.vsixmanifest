@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="theme-cyanicpastels" Version="0.0.9" Publisher="SamuelLampa"/>
+    <DisplayName>Cyanic Pastels</DisplayName>
+    <Description xml:space="preserve">A simple, to-the-point dark theme, with a nice CMYK-like color scale. Inspired by the Visual Studio Dark theme as well as other widespread themes such as the MATLAB default, it tries to stay with with widely established preferred colors for the most important bits in code: comments, strings and keywords, and to place these colors in a balanced way on the color wheel, since these three tend to be somewhat evenly distributed across most code. The addition of a CMYK like color shift, gives the &quot;cyanic&quot; feel, which is more pleasing to the eye, according to undersigned. </Description>
+    <Tags>theme</Tags>
+    <Categories>Themes</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Properties>
+      
+      
+      
+      
+      
+    </Properties>
+    
+    
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

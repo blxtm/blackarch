@@ -1,0 +1,7 @@
+[Match]
+MACAddress=0c:5b:8f:27:9a:64
+
+[Link]
+# set mac address randomly every time
+MACAddressPolicy=random
+NamePolicy=kernel database onboard slot path

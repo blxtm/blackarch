@@ -1,0 +1,44 @@
+{
+	"name": "whatever",
+	"displayName": "Whatever",
+	"description": "Color theme",
+	"version": "0.0.14",
+	"publisher": "usernamehw",
+	"icon": "assets/icon.png",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"vscode",
+		"themes",
+		"whatever"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Whatever",
+				"uiTheme": "vs-dark",
+				"path": "./themes/whatever-color-theme.json"
+			}
+		]
+	},
+	"galleryBanner": {
+		"color": "#13171f",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/usernamehw/vscode-theme-whatever"
+	},
+	"bugs": {
+		"url": "https://github.com/usernamehw/vscode-theme-whatever/issues"
+	},
+	"__metadata": {
+		"id": "c1b6e634-914e-4ae5-bde8-c0604017f8ed",
+		"publisherId": "151820df-5dc5-4c97-8751-eb84643203fa",
+		"publisherDisplayName": "Alexander"
+	}
+}

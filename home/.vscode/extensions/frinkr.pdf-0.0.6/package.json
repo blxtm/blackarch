@@ -1,0 +1,40 @@
+{
+	"name": "pdf",
+	"publisher": "frinkr",
+	"displayName": "pdf",
+	"description": "pdf syntax highlighter",
+	"version": "0.0.6",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "pdf",
+				"aliases": [
+					"pdf",
+					"pdf"
+				],
+				"extensions": [
+					"pdf"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "pdf",
+				"scopeName": "source.pdf",
+				"path": "./syntaxes/pdf.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "11d5e9b0-d842-4221-ace4-6cab8fa9a80c",
+		"publisherId": "5100040e-d7f5-46a8-b18c-43eafc5d8b77",
+		"publisherDisplayName": "Daniel"
+	}
+}

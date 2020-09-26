@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/exsomnis/monitor'
+let g:netrw_dirhist_2='/hdd/pgr/cycloid/aa-2009/youdeploy-http-api/services/youdeploy/git'
+let g:netrw_dirhist_1='/hdd/pgr/cycloid/aa-2009/youdeploy-http-api/services/youdeploy/public'
+let g:netrw_dirhist_0='/hdd/pgr/cycloid/aa-2009/youdeploy-http-api/services/youdeploy'
+let g:netrw_dirhist_9='/hdd/pgr/cycloid/aa-2009/youdeploy-http-api/services/youdeploy/organization'
+let g:netrw_dirhist_8='/hdd/pgr/cycloid/aa-2009/youdeploy-http-api/services/youdeploy'
+let g:netrw_dirhist_7='/hdd/pgr/cycloid/aa-2009/youdeploy-http-api/services'
+let g:netrw_dirhist_6='/hdd/pgr/cycloid/aa-2009/youdeploy-http-api'
+let g:netrw_dirhist_5='/home/exsomnis/.config'
+let g:netrw_dirhist_4='/sys/class/backlight/nv_backlight'
