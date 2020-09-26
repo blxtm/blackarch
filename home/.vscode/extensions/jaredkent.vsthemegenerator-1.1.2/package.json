@@ -1,0 +1,59 @@
+{
+	"name": "vsthemegenerator",
+	"displayName": "Theme Generator",
+	"description": "Generate custom syntax themes quick and easy",
+	"version": "1.1.2",
+	"publisher": "jaredkent",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Jaredk3nt/VSThemeGenerator"
+	},
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"activationEvents": [
+		"onCommand:extension.generateTheme",
+		"onCommand:extension.randomTheme"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.generateTheme",
+				"title": "Generate Theme"
+			},
+			{
+				"command": "extension.randomTheme",
+				"title": "Random Theme"
+			}
+		]
+	},
+	"keywords": [
+		"theme",
+		"theme generator",
+		"custom",
+		"syntax color"
+	],
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"eslint": "^4.11.0",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"fs": "0.0.1-security"
+	},
+	"__metadata": {
+		"id": "8b2ebd42-3ffc-4508-882b-ddd7514caa68",
+		"publisherId": "74caceac-ea4c-4ffc-bf36-7bf8eee7a6d2",
+		"publisherDisplayName": "Jared Jones"
+	}
+}

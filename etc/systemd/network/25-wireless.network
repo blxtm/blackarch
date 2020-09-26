@@ -1,0 +1,8 @@
+[Match]
+Name=wlp0s20f3
+
+[Network]
+DHCP=ipv4
+
+[DHCP]
+RouteMetric=20

@@ -1,0 +1,66 @@
+{
+	"name": "theme-stayfresh",
+	"displayName": "theme-stayfresh",
+	"description": "Just nice fresh theme",
+	"version": "1.1.2",
+	"publisher": "piotrekfracek",
+	"dependencies": {
+		"chokidar": "^1.6.1",
+		"color": "^1.0.3",
+		"lighter-spawn": "^1.0.0",
+		"xml": "^1.0.1"
+	},
+	"scripts": {
+		"watch": "node watch.js",
+		"build": "node src/index.js"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/piotrekfracek/vsc-theme-stayfresh"
+	},
+	"icon": "icon.png",
+	"files": [
+		"icon.png",
+		"themes"
+	],
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "stayfresh-main",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stayfresh-main.tmTheme"
+			},
+			{
+				"label": "stayfresh-blue",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stayfresh-blue.tmTheme"
+			},
+			{
+				"label": "stayfresh-warm",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stayfresh-warm.tmTheme"
+			},
+			{
+				"label": "stayfresh-lowcontrast",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stayfresh-lowcontrast.tmTheme"
+			},
+			{
+				"label": "stayfresh-highcontrast",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stayfresh-highcontrast.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "bb07c68d-6c95-4856-bceb-5e1456fd1a4f",
+		"publisherId": "f0437f4f-3e18-4a31-a8bb-e7b7aa046eed",
+		"publisherDisplayName": "Piotrek Fracek"
+	}
+}

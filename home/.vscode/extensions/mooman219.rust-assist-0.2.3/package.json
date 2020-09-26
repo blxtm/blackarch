@@ -1,0 +1,118 @@
+{
+	"name": "rust-assist",
+	"displayName": "Rust Assist",
+	"description": "Rust language support: code diagnostics, formatting, snippets",
+	"version": "0.2.3",
+	"publisher": "mooman219",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mooman219/rust-assist/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mooman219/rust-assist"
+	},
+	"icon": "logo.png",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"keywords": [
+		"rust",
+		"rust-lang"
+	],
+	"activationEvents": [
+		"onLanguage:rust",
+		"workspaceContains:Cargo.toml",
+		"onCommand:rust-assist.check"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "rust",
+				"extensions": [
+					".rs"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "rust",
+				"path": "./snippets/base.json"
+			},
+			{
+				"language": "rust",
+				"path": "./snippets/control.json"
+			},
+			{
+				"language": "rust",
+				"path": "./snippets/macros.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "rust-assist.refreshDiagnostics",
+				"title": "Refresh diagnostics manually",
+				"category": "Rust"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "rust-assist configuration",
+			"properties": {
+				"rust-assist.diagnosticsOnStartup": {
+					"type": "boolean",
+					"default": true,
+					"description": "Specifies if diagnostics should be generated on startup."
+				},
+				"rust-assist.diagnosticsOnSave": {
+					"type": "boolean",
+					"default": true,
+					"description": "Specifies if diagnostics should be generated on save."
+				},
+				"rust-assist.formatOnSave": {
+					"type": "boolean",
+					"default": false,
+					"description": "Specifies if the file should be formatted on save."
+				},
+				"rust-assist.formatMode": {
+					"type": "string",
+					"enum": [
+						"backup",
+						"overwrite"
+					],
+					"default": "overwrite",
+					"description": "The format mode to write in. Backup generates backups, overwrite does not."
+				}
+			}
+		}
+	},
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.43",
+		"@types/tmp": "0.0.33",
+		"tslint": "^5.8.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.21"
+	},
+	"dependencies": {
+		"tmp": "0.0.33"
+	},
+	"__metadata": {
+		"id": "e315b818-6546-48ec-81ff-1a09672af3fa",
+		"publisherId": "6c21eea1-ddef-4d4f-a271-f9fc3e08cfab",
+		"publisherDisplayName": "mooman219"
+	}
+}

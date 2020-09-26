@@ -1,0 +1,153 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/exsomnis/
+	..
+1587603709
+'b
+	/home/exsomnis/bin/
+	..
+1587603709
+'h
+	/home/exsomnis/
+	..
+1587603709
+'z
+	/home/exsomnis/.config/vifm
+	..
+1587603709
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/exsomnis
+	Downloads
+1
+d/home
+	..
+0
+d/
+	opt
+10
+d/opt
+	..
+0
+d/
+	hdd
+4
+d/hdd
+	pictures
+7
+d/hdd/pictures
+	wallpapers
+1
+d/hdd/pictures/wallpapers
+	..
+0
+d/hdd/pictures
+	wallpapers
+1
+d/hdd/pictures/wallpapers
+	..
+0
+d/hdd/pictures
+	..
+0
+d/hdd
+	notes
+4
+d/hdd/notes
+	ca.go
+16
+d/hdd
+	notes
+4
+d/
+	hdd
+4
+d/hdd
+	pgr
+5
+d/hdd/pgr
+	..
+0
+d/hdd
+	..
+0
+d/
+	boot
+1
+d/boot
+	..
+0
+d/
+	hdd
+4
+d/hdd
+	books
+2
+d/hdd/books
+	ai_
+1
+d/hdd/books/ai_
+	[Richard_E._Neapolitan,_Xia_Jiang]_Artificial_Inte(z-lib.org).pdf
+1
+d/hdd/books
+	bash_
+3
+d/hdd/books/bash_
+	..
+0
+d/hdd/books
+	bash_
+3
+d/hdd
+	notes
+4
+d/hdd/notes
+	ca.go
+16
+d
+
+# Right window history (oldest to newest):
+D/home/exsomnis
+	Downloads
+1
+D
+
+# Command line history (oldest to newest):
+:colorscheme boho2
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

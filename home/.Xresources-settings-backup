@@ -1,0 +1,81 @@
+! generic
+urxvt.foreground: #b6ab94
+!urxvt.foreground: #8d8268
+urxvt.background: #262322
+
+! // base
+! warm blue - permission status hdd
+urxvt.color4: #187478
+! green - folders + marking color
+urxvt.color12: #278156
+
+
+! pale light blue-grey
+urxvt.color2: #a5a091
+! light beige - files + marking color
+!urxvt.color10: #908060
+urxvt.color10: #9a958a
+
+! warm red - 
+urxvt.color1: #b43636
+urxvt.color9: #b43636
+!urxvt.color9: #a93737
+
+! blue-green
+urxvt.color3: #4fa387
+! urxvt.color11: #x
+
+! permission status nvme0p#
+urxvt.color5: #2e9276
+! /run, proc - warm blue same as permission status on hdd
+urxvt.color13: #187478
+
+! light yellow-beige folders + marking color
+urxvt.color14: #8d8675
+!urxvt.color14: #a39166
+
+urxvt.color7: #968d7a
+urxvt.color15: #968d7a
+
+urxvt.color11: #a79a7f
+
+
+
+! urxvt
+urxvt.font:                   xft:xos4 Terminus:size=12:antialias=true:hinting=true
+urxvt.url-launcher:           /usr/bin/xdg-open
+urxvt.matcher.button:         1
+urxvt.scrollBar:              false
+urxvt.termName:               xterm-256color
+urxvt.saveLines:              10000
+! urxvt.inheritPixmap:          true
+! urxvt.shading:                20
+urxvt.clipboard.autocopy:     true
+urxvt.perl-ext-common:        default,selection-to-clipboard,pasta,matcher,keyboard-select,resize-font,font
+urxvt.keysym.M-u:             perl:url-select:select_next
+urxvt.transparent:            false
+urxvt.buffered:               true
+urxvt.jumpScroll:             false
+urxvt.scrollTtyKeypress:      true
+urxvt.scrollTtyOutput:        false
+urxvt.scrollWithBuffer:       false
+urxvt.scrollstyle:            plain
+urxvt.secondaryScroll:        false
+urxvt.xftAntialias:           true
+!urxvt.color4:                 RoyalBlue
+!urxvt.color12:                RoyalBlue
+urxvt.matcher.rend.0:         Bold fg6
+urxvt.cursorBlink:            false
+urxvt.cursorColor:            #968d7a
+urxvt.mapAlert:               true
+urxvt.pointerBlank:           true
+urxvt.resource:               value
+urxvt.iso14755:               false
+urxvt.iso14755_52:            false
+
+! cursor
+Xcursor.theme:                Adwaita
+Xcursor.size:                 14
+
+! xft
+xft.antialias:                true

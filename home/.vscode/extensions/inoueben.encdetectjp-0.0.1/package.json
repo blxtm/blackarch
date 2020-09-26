@@ -1,0 +1,33 @@
+{
+	"name": "encdetectjp",
+	"displayName": "encdetect jp",
+	"description": "On File Open, Detect Text Encoding(UTF8 SJIS EUCJP) and Show Warning Message",
+	"version": "0.0.1",
+	"publisher": "inoueben",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.encdetectjp",
+				"title": "encdetect jp"
+			}
+		]
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	},
+	"__metadata": {
+		"id": "5c3a1590-ae5c-4560-b805-125ca4dee6cb",
+		"publisherId": "8957e389-7cc2-4bf2-97db-31034011484b",
+		"publisherDisplayName": "inoueben"
+	}
+}

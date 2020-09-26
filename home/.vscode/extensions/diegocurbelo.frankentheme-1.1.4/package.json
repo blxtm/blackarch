@@ -1,0 +1,45 @@
+{
+	"name": "frankentheme",
+	"displayName": "Frankentheme",
+	"description": "Frankentheme is a mix of themes, mainly based on Netbeans and GitHub color schemes",
+	"version": "1.1.4",
+	"publisher": "diegocurbelo",
+	"icon": "logo.png",
+	"engines": {
+		"vscode": "*"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"id": "frankentheme-light",
+				"label": "Frankentheme Light",
+				"uiTheme": "vs",
+				"path": "./themes/frankentheme-light.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "frankentheme-icons",
+				"label": "Frankentheme",
+				"path": "./icons/frankentheme-icons.json"
+			}
+		]
+	},
+	"homepage": "https://github.com/diegocurbelo/vscode-frankentheme/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/diegocurbelo/vscode-frankentheme"
+	},
+	"bugs": {
+		"url": "https://github.com/diegocurbelo/vscode-frankentheme/issues",
+		"email": "diego@curbelo.com"
+	},
+	"__metadata": {
+		"id": "a335cde4-7953-4ce6-b326-9967fb317884",
+		"publisherId": "1c3316b1-8dbd-4194-be32-04891176adfb",
+		"publisherDisplayName": "Diego Curbelo"
+	}
+}

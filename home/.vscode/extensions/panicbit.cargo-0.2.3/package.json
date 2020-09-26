@@ -1,0 +1,79 @@
+{
+	"name": "cargo",
+	"displayName": "Cargo",
+	"description": "Integration with cargo and cargo tools",
+	"version": "0.2.3",
+	"publisher": "panicbit",
+	"repository": "https://github.com/panicbit/vscode-cargo",
+	"icon": "cargo.png",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:rust",
+		"onCommand:cargo.check",
+		"onCommand:cargo.build",
+		"onCommand:cargo.add",
+		"onCommand:cargo.rm"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "cargo.check",
+				"title": "Cargo: Check"
+			},
+			{
+				"command": "cargo.build",
+				"title": "Cargo: Build"
+			},
+			{
+				"command": "cargo.add",
+				"title": "Cargo: Add dependency"
+			},
+			{
+				"command": "cargo.rm",
+				"title": "Cargo: Remove dependency"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Cargo configuration",
+			"properties": {
+				"cargo.automaticCheck": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically run `cargo check`."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"cargo": "cd json-stream && wasm-pack build --target nodejs",
+		"compile": "npm run cargo && npx tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.10.9",
+		"tslint": "^5.20.1",
+		"typescript": "^3.7",
+		"vscode": "^1.1.36"
+	},
+	"dependencies": {
+		"json-stream": "file:./json-stream/pkg",
+		"@types/node-fetch": "^1.6.9",
+		"node-fetch": "^2.6.0"
+	},
+	"__metadata": {
+		"id": "ca2ba891-775c-480a-9764-414b06f6e114",
+		"publisherId": "87b278c0-dad0-48eb-9013-47f418b56e72",
+		"publisherDisplayName": "panicbit"
+	}
+}

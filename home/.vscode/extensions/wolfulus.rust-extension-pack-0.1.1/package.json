@@ -1,0 +1,31 @@
+{
+	"name": "rust-extension-pack",
+	"displayName": "Rust Extension Pack",
+	"description": "Rust Essential Extensions",
+	"publisher": "wolfulus",
+	"version": "0.1.1",
+	"icon": "resources/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/WoLfulus/rust-extension-pack.git"
+	},
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"bungcip.better-toml",
+		"panicbit.cargo",
+		"serayuzgur.crates",
+		"kalitaalexey.vscode-rust",
+		"rust-lang.rust",
+		"swellaby.vscode-rust-test-adapter"
+	],
+	"__metadata": {
+		"id": "24cf1c51-b63d-470c-a674-fd9ae763e120",
+		"publisherId": "8688dba9-1b7d-412b-af1e-abf411ca7464",
+		"publisherDisplayName": "WoLfulus"
+	}
+}
